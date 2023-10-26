@@ -1,6 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Outfit:wght@400;500&family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Sora:wght@400;500&family=Sofia+Sans&display=swap');
 
 *{
     margin: 0 0;
     padding: 0 0;
+    --primary-color: #5C3D2E;
+}
+
+/* Navbar */
+.navBar{
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar > .brand{
+    color: var(--primary-color);
+    font-family: "Lobster Two", sans-serif;
+    font-size: 30px;
+}
+
+.navBar > .navItems{
+    width: auto;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.navItems > .navItem{
+    text-decoration: none;  
+    color: var(--primary-color);
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+.navBar > .orderBtn{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
 }
