@@ -63,14 +63,13 @@
 /* Hero Section */
 .heroSec{
     width: 100%;
-    height: auto;
+    height: calc(100vh - 65px);
     background-color: #fff;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     column-gap: 7.5rem;
-    padding: 5rem 0;
 }
 
 .heroSec > .quoteSec{
