@@ -110,3 +110,64 @@
 .heroSec > img{
     width: 375px;
 }
+
+/* Best-Selling Section */
+.bestSellingSec{
+    width: 100%;
+    height: auto;
+    background-color: rgb(235,235,235);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.bestSellingSec > .title{
+    color: var(--primary-color);
+    font-family: "Outfit", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.bestSellingSec > .container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.card{
+    width: 20%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 6px;
+}
+
+.card > .cardImg{
+    width: 100%;
+}
+
+.card > .cardTitle{
+    color: var(--primary-color);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card > .cardSubtitle{
+    color: #000;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.25em;
+    margin: 0 1rem 0.5rem 1rem;
+}
