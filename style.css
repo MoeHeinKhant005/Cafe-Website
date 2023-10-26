@@ -46,11 +46,18 @@
     width: 100px;
     height: 40px;
     outline: none;
-    border: none;
+    border: 3px solid var(--primary-color);
     color: #fff;
     background-color: var(--primary-color);
     font-family: "Sofia Sans", sans-serif;
     font-size: 14px;
+    transition: 150ms ease-in-out all 0s;
+}
+
+.navBar > .orderBtn:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 3px solid var(--primary-color);
 }
 
 /* Hero Section */
