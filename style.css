@@ -110,8 +110,8 @@
     width: 375px;
 }
 
-/* Best-Selling Section */
-.bestSellingSec{
+/* Best-Selling and Menu Section */
+.bestSellingSec, .menuSec{
     width: 100%;
     height: auto;
     background-color: rgb(235,235,235);
@@ -123,14 +123,14 @@
     padding: 2rem 0;
 }
 
-.bestSellingSec > .title{
+.bestSellingSec > .title, .menuSec > .title{
     color: var(--primary-color);
     font-family: "Outfit", sans-serif;
     font-size: 26px;
     font-weight: 500;
 }
 
-.bestSellingSec > .container{
+.bestSellingSec > .container, .menuSec > .container{
     width: 80%;
     height: auto;
     display: flex;
