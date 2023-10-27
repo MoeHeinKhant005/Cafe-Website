@@ -170,3 +170,21 @@
     line-height: 1.25em;
     margin: 0 1rem 0.5rem 1rem;
 }
+
+/* Caption Section */
+.captionSec{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.captionSec > .caption{
+    color: var(--primary-color);
+    font-family: "Lobster Two", sans-serif;
+    font-size: 34px;
+}
