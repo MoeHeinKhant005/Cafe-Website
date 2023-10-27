@@ -243,6 +243,12 @@ input::placeholder{
     outline: none;
     font-family: "Sofia Sans", sans-serif;
     font-size: 14px;
+    transition: 150ms ease-in-out all 0s;
+}
+
+.form > .submitBtn:hover{
+    color: var(--primary-color);
+    background-color: #fff;
 }
 
 .contactSec > .coffeeShopLogo{
