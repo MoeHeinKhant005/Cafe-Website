@@ -188,3 +188,63 @@
     font-family: "Lobster Two", sans-serif;
     font-size: 34px;
 }
+
+/* Contact Section*/
+.contactSec{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
+    padding: 2rem 0;
+}
+
+.contactSec > .form{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+}
+
+.form > .title{
+    color: var(--primary-color);
+    font-family: "Outfit", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.form > input{
+    color: var(--primary-color);
+    width: 75%;
+    height: 40px;
+    outline: none;
+    border: 3px solid var(--primary-color);
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+input::placeholder{
+    color: var(--primary-color);
+}
+
+.form > .submitBtn{
+    color: #fff;
+    background-color: var(--primary-color);
+    width: calc(75% + 18px);
+    height: 46px;
+    border: 3px solid var(--primary-color);
+    outline: none;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+}
+
+.contactSec > .coffeeShopLogo{
+    width: 225px;
+}
