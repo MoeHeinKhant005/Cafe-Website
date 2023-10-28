@@ -254,3 +254,38 @@ input::placeholder{
 .contactSec > .coffeeShopLogo{
     width: 225px;
 }
+
+/* Footer Section */
+.footerSec{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 2rem 0;
+}
+
+.footerSec > .shopName{
+    color: #fff;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.footerSec > .devName{
+    color: #fff;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
