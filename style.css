@@ -289,3 +289,33 @@ input::placeholder{
     align-items: center;
     column-gap: 6px;
 }
+
+/* Tablet View*/
+@media only screen and (max-width: 768px){
+    .heroSec{
+        column-gap: 0rem;
+    }
+
+    .bestSellingSec > .container, .menuSec > .container{
+        width: 85%;
+        flex-flow: wrap;
+        row-gap: 2rem;
+    }
+
+    .card{
+        width: calc(100% / 2 - 2rem);
+    }
+
+    .captionSec > .caption{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contactSec{
+        column-gap: 1.5rem;
+    }
+
+    .contactSec > .form{
+        width: 50%;
+    }
+}
