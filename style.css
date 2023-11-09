@@ -4,6 +4,17 @@
     margin: 0 0;
     padding: 0 0;
     --primary-color: #5C3D2E;
+    scroll-behavior: smooth;
+
+    /* Hide Scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+/* Hide Scrollbar */
+*::-webkit-scrollbar{
+    display: none;
 }
 
 /* Navbar */
