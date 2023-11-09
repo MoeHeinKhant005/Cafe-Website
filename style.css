@@ -23,6 +23,11 @@
     font-size: 30px;
 }
 
+/* Hide MobileNavBtn On Desktop View */
+.navBar > .rightMenuBtn{
+  display: none;
+}
+
 .navBar > .navItems{
     width: auto;
     height: auto;
@@ -290,8 +295,93 @@ input::placeholder{
     column-gap: 6px;
 }
 
+/* Mobile Navbar Stylings */
+.sideBar{
+    width: 100%; 
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2.5rem;
+
+    position: fixed;
+    right: 0px;
+    top: 0px;
+
+    transform: translateX(100%);
+    transition: all 150ms ease-in-out 0s;
+}
+
+.sideBar > .closeBtn{
+    font-size: 42px;
+    color: var(--primary-color);
+    align-self: flex-end;
+    margin: 18px;
+}
+
+.sideBar > .navItems{
+    width: 75%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.navItems > hr{
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}
+
+.sideBar > .orderBtn{
+    width: 120px;
+    height: 50px;
+    outline: none;
+    border: 3px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    transition: 150ms ease-in-out all 0s;
+}
+
+.sideBar > .orderBtn:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 3px solid var(--primary-color);
+} 
+
 /* Tablet View*/
 @media only screen and (max-width: 768px){
+    .navBar{
+      justify-content: space-between; 
+    }
+
+    .navBar > .brand, .navBar > .rightMenuBtn{
+      margin: 0 36px;
+    }
+
+    .navBar > .navItems{
+        display: none;
+    }
+
+    .navBar > .rightMenuBtn{
+        display: flex;
+        font-size: 42px;
+        color: var(--primary-color);
+    }
+
+    .navBar > .orderBtn{
+        display: none;
+    }
+    
     .heroSec{
         column-gap: 0rem;
     }
@@ -322,6 +412,10 @@ input::placeholder{
 
 /* Mobile View */
 @media only screen and (max-width: 425px){
+    .navBar > .brand, .navBar > .rightMenuBtn{
+      margin: 0 18px;
+    }
+
     .heroSec{
         flex-flow: column-reverse nowrap;
         row-gap: 2rem;
