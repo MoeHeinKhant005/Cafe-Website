@@ -236,6 +236,7 @@
     font-family: "Outfit", sans-serif;
     font-size: 26px;
     font-weight: 500;
+    margin-bottom: calc(2rem - 12px);
 }
 
 .form > input{
