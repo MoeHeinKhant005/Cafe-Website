@@ -18,3 +18,11 @@ closeBtn.addEventListener('click', e => {
   }
 })
 
+// Function to close sidebar whenever a navItem is clicked
+const mobileNavItems = document.querySelectorAll('.sideBar .navItem');
+mobileNavItems.forEach(item => {
+  item.addEventListener('click', e => {
+    sidebar.style.transform = "translateX(100%)";
+    isExpanded = false;
+  })
+})
