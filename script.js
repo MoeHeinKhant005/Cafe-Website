@@ -26,3 +26,19 @@ mobileNavItems.forEach(item => {
     isExpanded = false;
   })
 })
+
+// Function to scroll to contactSec when orderBtn is clicked
+const orderBtn = document.querySelectorAll('.orderBtn');
+orderBtn.forEach(item => {
+  item.addEventListener('click', e => {
+    sidebar.style.transform = "translateX(100%)";
+    isExpanded = false;
+    document.querySelector('.contactSec').scrollIntoView();
+  })
+})
+
+// Function to scroll to menuSec when viewMenuBtn is clicked  
+const viewMenuBtn = document.querySelector('.viewMenuBtn');
+viewMenuBtn.addEventListener('click', e => {
+  document.querySelector('.menuSec').scrollIntoView();
+})
